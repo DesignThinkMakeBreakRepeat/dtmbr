@@ -58,13 +58,38 @@ body.home #sidebar {
 
 .svg-browser {
 	margin-left: 20%;
+	position: relative;
 }
 
+	.svg-browser img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 91.5%;
+		max-width: 722px;
+		z-index: -1
+	}
+
 .svg-book {
+	display: block;
 	margin-top: -16rem;
 	margin-right: $whitespace;
-	width: auto;
+	position: relative;
+	z-index: 3;
 }
+
+	.svg-book .wrapper {
+		max-width: 445px;
+	}
+
+	.svg-book img {
+		height: 89%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: auto;
+		z-index: -1;
+	}
 
 	.svg-book object {
 		max-width: 100%;
