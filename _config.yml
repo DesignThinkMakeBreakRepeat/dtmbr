@@ -1,6 +1,7 @@
 title: "Design. Think. Make. Break. Repeat."
 
-url: "https://designthinkmakebreakrepeat.github.io/dtmbr/"
+url: "https://designthinkmakebreakrepeat.github.io"
+baseurl: "/dtmbr"
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
