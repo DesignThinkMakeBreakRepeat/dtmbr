@@ -59,7 +59,7 @@
     var sjs = SimpleJekyllSearch({
       searchInput: searchInput,
       resultsContainer: resultsContainer,
-      json: './search.json'
+      json: '{{ "search.json" | relative_url }}'
     });
 
     function toggleResultsContainer() {
