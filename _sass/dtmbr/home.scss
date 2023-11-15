@@ -77,12 +77,8 @@ body.home #sidebar {
 .band {
 	display: grid;
 	margin: -6rem auto 0 auto;
-	padding-top: 4rem;
+	padding-top: 6rem;
 	width: 100%;
-
-	@include break-phone {
-		padding-top: 6rem;
-	}
 
 	@include break-medium {
 		padding-top: 5rem;
