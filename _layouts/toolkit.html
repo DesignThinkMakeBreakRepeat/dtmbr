@@ -1,0 +1,62 @@
+---
+layout: base
+---
+<article class="post">
+
+  <div class="post-content">
+    {{ content }}
+
+    {%- if page.title == "Toolkit" -%}
+      {%- assign methods = site.pages | where: "layout", "method" | sort: "title" -%}
+
+      <div class="methods-table">
+        <table>
+          <tr>
+            <th>Pages</th>
+            <th>DTMBR</th>
+            <th>Method</th>
+            <th>Resources</th>
+          </tr>
+        {%- for method in methods -%}
+          <tr>
+            <td>
+              {{ method.pages }}
+            </td>
+            <td>
+              {%- if method.activities -%}
+                {%- assign activities = "design,think,make,break,repeat" | split: "," -%}
+                {%- for activity in activities -%}
+                  {%- if method.activities contains activity -%}
+                    {%- assign activity_icon = "svg/dtmbr-icons/" | append: activity | append: ".svg" -%}
+                    {%- include {{ activity_icon }} -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+            </td>
+            <td>
+              <a href="{{ method.url | relative_url }}"><strong>{{ method.title | escape }}</strong><br>
+              {{ method.subtitle | escape }}</a>
+            </td>
+            <td>
+              {%- if method.resources -%}
+                <ul class="resources">
+                {%- for resource in method.resources -%}
+                  {%- if resource.url -%}
+                    <li><a href="{{ resource.url }}">{%- include svg/octicons/link.svg -%}<span>{{ resource.name }}</span></a></li>
+                  {%- elsif resource.file -%}
+                    {%- assign resource_ext = resource.file | split: "." | last -%}
+                    {%- assign resource_path = "/resources/" | append: resource.file -%}
+                    <li><a href="{{ resource_path | relative_url }}">{%- include svg/octicons/desktop-download.svg -%}<span>{{ resource.name }} <code>{{ resource_ext }}</code></span></a></li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+              {%- endif -%}
+            </td>
+          </tr>
+        {%- endfor -%}
+        </table>
+      </div>
+    {%- endif -%}
+  </div>
+
+</article>

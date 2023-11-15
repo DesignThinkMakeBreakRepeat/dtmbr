@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="home">
+
+    {%- include header.html -%}
+
+    <nav id="sidebar">
+
+      {%- include top-nav.html -%}
+
+    </nav>
+
+    <header class="masthead">
+
+      <div class="title-card">
+        <h1>Design.<br>Think.<br>Make.<br>Break.<br>Repeat.</h1>
+        <p>{{ site.data.site-parts.home-intro }}</p>
+        <a href="#handbook">{%- include svg/arrow-down.svg -%}</a>
+      </div>
+
+      <div class="splash">
+
+        {%- include svg/browser.svg -%}
+        {%- include svg/book.svg -%}
+        
+      </div>
+
+    </header>
+
+    <main class="page-content" aria-label="Content">
+
+      <div class="pink band">
+        <div class="wrapper">
+          <div class="book-card">
+            
+            <div class="card-text" id="handbook">
+              <h2>The handbook</h2>
+              <p>{{ site.data.site-parts.home-book-intro }}</p>
+              <div class="button-set">
+                <a class="button" href="{{ "buy.html" | relative_url }}">Buy the book →</a>
+                <a class="text" href="{{ "about.html#how-to-cite-the-book" | relative_url }}">How to cite the book</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="stats-box">
+
+            <div class="stats">
+              <h3>Book and toolkit</h3>
+              <p><span class="number">{{ site.data.site-parts.home-stats-methods }}</span> methods</p>
+              <p><span class="number">{{ site.data.site-parts.home-stats-templates }}</span> templates</p>
+              <p><span class="number">{{ site.data.site-parts.home-stats-case-studies }}</span> case studies</p>
+            </div>
+
+            <div class="carousel">
+
+              <p>What people are saying</p>
+
+              <div class="carousel-slides-book">
+
+                {% assign book_quotes = site.data.site-parts.home-book-quotes %}
+
+                {%- for book_quote_set in book_quotes -%}
+                <div class="slide">
+                  {%- include svg/quote.svg -%}
+                  <blockquote>
+                    {{ book_quote_set.quote }}
+                  </blockquote>
+                  <p class="attribution">
+                    {{ book_quote_set.name }}<br>
+                    {{ book_quote_set.role }}
+                  </p>
+                </div>
+                {%- endfor -%}
+
+              </div>
+
+              <div role="tablist" class="dots" id="dots-book"></div>
+
+            </div>
+          </div>
+
+          <div class="dither"></div>
+
+        </div>
+      </div>
+
+      <div class="white band">
+
+        <div class="wrapper">
+
+          <div class="courses-card">
+
+            <h2>The online courses</h2>
+            <p>{{ site.data.site-parts.home-courses-intro }}</p>
+            <div class="usyd-logo">
+              {%- include svg/usyd.svg -%}
+              <span>Offered by the University of Sydney</span>
+            </div>
+
+            <div class="courses">
+              {% assign courses = site.data.site-parts.home-courses %}
+
+              {%- for course_set in courses -%}
+              <div class="course">
+                <div class="thumbnail">
+                  <a href="{{ "courses" | append: course_set.anchor | relative_url }}">
+                    <img src="{{ "/assets/images/" | append: course_set.image | relative_url }}">
+                  </a>
+                </div>
+                <div class="description">
+                  <h3><a href="{{ "courses/#" | append: course_set.anchor | relative_url }}">{{ course_set.title }}</a></h3>
+                  <p>{{ course_set.description }}</p>
+                  <p><a href="{{ "courses/#" | append: course_set.anchor | relative_url }}">View the course →</a></p>
+                </div>
+              </div>
+              {%- endfor -%}
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="wrapper">
+
+          <div class="stats-box">
+
+            <div class="stats">
+              <h3>Course contents</h3>
+              <p><span class="number">{{ site.data.site-parts.home-stats-enrolments }}</span> enrolled</p>
+              <p><span class="number">{{ site.data.site-parts.home-stats-hours }}</span> course hours</p>
+              <p>Enrol free</p>
+            </div>
+
+            <div class="carousel">
+
+              <p>What people are saying</p>
+
+              <div class="carousel-slides-courses">
+
+                {% assign course_quotes = site.data.site-parts.home-course-quotes %}
+
+                {%- for course_quote_set in course_quotes -%}
+                <div class="slide">
+                  {%- include svg/quote.svg -%}
+                  <blockquote>
+                    {{ course_quote_set.quote }}
+                  </blockquote>
+                  <p class="attribution">
+                    {{ course_quote_set.name }}<br>
+                    {{ course_quote_set.role }}
+                  </p>
+                </div>
+                {%- endfor -%}
+
+              </div>
+
+              <div role="tablist" class="dots" id="dots-courses"></div>
+
+            </div>
+          </div>
+
+          <div class="dither"></div>
+
+        </div>
+      </div>
+
+      <div class="blue band">
+        <div class="wrapper">
+          <div class="methods-image">
+            {%- include svg/toolkit.svg -%}
+          </div>
+          <div class="methods-intro">
+            <h2>Methods toolkit</h2>
+            <h3>Resources. Exercises. Templates. Gratis.</h3>
+            <p>{{ site.data.site-parts.home-methods-intro }}</p>
+            <div class="button-set">
+              <a class="button" href="{{ "toolkit/" | relative_url }}">Go to the toolkit →</a>
+              <a class="text" href="{{ "videos/" | relative_url }}">Watch the case studies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="wrapper">
+          <h2>About</h2>
+          <p>{{ site.data.site-parts.home-about }}</p>
+          <a href="{{ "about/" | relative_url }}">Learn more →</a>
+        </div>
+      </div>
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

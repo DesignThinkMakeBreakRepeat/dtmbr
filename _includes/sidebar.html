@@ -1,0 +1,31 @@
+<nav id="sidebar">
+
+  {%- if page.toc -%}
+    <div class="page-nav">
+      <h2 class="on-this-page">On this page</h2>
+      {% include toc.html html=content %}
+    </div>
+  {%- endif -%}
+
+  {%- include top-nav.html -%}
+
+  {% if page.title == "Toolkit" or page.layout == "method" %}
+    <div class="toolkit-nav">
+      <a href="{{ "/toolkit/" | relative_url }}"><h2>Toolkit Methods</h2></a>
+      {%- assign method_initial = page.title | slice: 0, 1 -%}
+      {%- assign methods_alphabetical = site.pages | where: "layout", "method" | group_by_exp: "page", "page.title | slice: 0, 1" -%}
+      {%- assign numbers = "0,1,2,3,4,5,6,7,8,9" | split: "," -%}
+      {%- for letter in methods_alphabetical -%}
+        <div id="letter-{{ letter.name }}" class="letter-drawer{% if page.layout == "method" and letter.name == method_initial or letter.name == "#" and numbers contains method_initial    %} open{% endif %}">
+          <h2>{%- if numbers contains letter.name -%}#{%- else -%}{{ letter.name }}{%- endif -%}<span class="chevron">{%- include svg/octicons/chevron-right.svg -%}</span></h2>
+          <ul>
+            {%- for method in letter.items -%}
+              <li><a {% if method.title == page.title %}class="active"{% endif %} href="{{ method.url | relative_url }}">{{ method.title }}</a></li>
+            {%- endfor -%}
+          </ul>
+        </div>
+      {%- endfor -%}
+    </div>
+  {% endif %}
+
+</nav>

@@ -1,0 +1,415 @@
+// =============
+// Splash Header
+// =============
+
+.masthead {
+	display: grid;
+	grid-template-columns: [left] $whitespace [margin-left] 5fr [title-card-right] calc(5 * $whitespace) [splash-left] 7fr [margin-right] $whitespace [right];
+	margin: 0 auto;
+	max-width: $max-width;
+	padding-top: $whitespace-large;
+}
+
+body.home #sidebar {
+	display: none;
+	padding-left: $whitespace;
+}
+
+	body.home #sidebar.open {
+		display: block;
+	}
+
+.title-card {
+	grid-column-start: margin-left;
+	grid-column-end: margin-right;
+	padding: $whitespace-large 0 $whitespace-large $whitespace-large;
+
+	@include break-medium {
+		grid-column-end: title-card-right;
+	}
+}
+
+	.title-card h1 {
+		margin-bottom: $whitespace-large;
+
+		@include break-medium {
+			margin: calc(1.5 * $whitespace-large) 0;
+		}
+	}
+
+	.title-card p {
+		font-size: $font-size-large;
+		max-width: 30rem;
+	}
+
+	.title-card .arrow-icon {
+		padding: $whitespace-large 0;
+	}
+
+.splash {
+	grid-column-start: margin-left;
+	grid-column-end: right;
+
+	@include break-medium {
+		grid-column-start: splash-left;
+		grid-column-end: right;
+	}
+}
+
+.svg-browser {
+	margin-left: 20%;
+}
+
+.svg-book {
+	margin-top: -16rem;
+	margin-right: $whitespace;
+	width: auto;
+}
+
+	.svg-book svg {
+		max-width: 100%;
+	}
+
+// ==============
+// Coloured Bands
+// ==============
+
+.band {
+	display: grid;
+	margin: -6rem auto 0 auto;
+	padding-top: 4rem;
+	width: 100%;
+
+	@include break-phone {
+		padding-top: 6rem;
+	}
+
+	@include break-medium {
+		padding-top: 5rem;
+	}
+}
+
+	.pink.band {
+		background-color: $red-pale;
+		z-index: -3;
+	}
+
+	.white.band {
+		background-color: $white;
+		z-index: -2;
+	}
+
+	.blue.band {
+		background-color: $blue;
+		margin-top: -7.5rem;
+		padding-top: calc(7.5rem + 2 * $whitespace-large);
+		z-index: -1;
+	}
+
+	.band .wrapper {
+		display: grid;
+		grid-template-columns: [left] $whitespace-large [margin-left] auto [margin-right] $whitespace-large [right];
+		margin: 0 auto;
+		max-width: $max-width;
+		width: 100%;
+	}
+
+		.blue.band .wrapper {
+			grid-template-columns: [left] $whitespace-large [margin-left] auto [image-right] calc(3 * $whitespace-large) [intro-left] 1fr [margin-right] $whitespace-large [right];
+			grid-template-rows: [top] auto [gutter] auto [bottom];
+		}
+
+// ===============
+// Common Elements
+// ===============
+
+.button-set {
+	margin: calc(2 * $whitespace) 0;
+	font-size: $font-size-base;
+}
+
+	.button-set .button {
+		background-color: $red;
+		color: $white;
+		margin-right: $whitespace-large;
+		padding: $whitespace $whitespace-large;
+	}
+
+		.button-set .button:hover {
+			background: none;
+			color: $red;
+			text-decoration: underline;
+		}
+
+	.button-set .text {
+		display: inline-block;
+		margin: $whitespace 0;
+		white-space: nowrap;
+	}
+
+.card-text {
+	max-width: $max-width-home;
+}
+
+.dither {
+	grid-column-start: margin-left;
+	grid-column-end: margin-right;
+	height: $whitespace-large;
+}
+
+	.pink.band .dither {
+		background: $dither-red;
+	}
+
+	.white.band .dither {
+		background: $dither-blue;
+	}
+
+// ===========
+// Stats Boxes
+// ===========
+
+.stats-box {
+	background-color: $white;
+	border: $border;
+	display: grid;
+	font-family: $font-family-mono;
+	grid-column-start: margin-left;
+	grid-column-end: margin-right;
+	grid-template-columns: [left] auto [gutter] auto [right];
+	grid-template-rows: [top] auto [gutter] auto [bottom];
+}
+
+.stats,
+.carousel {
+	padding: $whitespace;
+
+	@include break-medium {
+		padding: calc(2 * $whitespace);
+	}
+}
+
+.stats {
+	border-bottom: $border;
+	grid-column-start: left;
+	grid-column-end: right;
+	grid-row-start: top;
+	grid-row-end: gutter;
+
+	@include break-medium {
+		border-right: $border;
+		border-bottom: none;
+		grid-column-end: gutter;
+		grid-row-end: bottom;
+	}
+}
+
+	.stats h3 {
+		font-size: $font-size-base;
+		font-weight: inherit;
+	}
+
+	.stats p {
+		font-size: $font-size-large;
+	}
+
+	.stats .number {
+		font-size: 2.5rem;
+	}
+
+.carousel {
+	font-size: $font-size-base;
+	max-width: 17.5rem;
+	width: 100%;
+
+	@include break-phone {
+		max-width: 25rem;
+	}
+
+	@include break-large {
+		max-width: 32.5rem;
+	}
+}
+
+	.carousel .glider {
+		overflow-x: hidden;
+	}
+
+	.carousel .slide {
+		margin: $whitespace-large 0;
+	}
+
+		.carousel .slide blockquote {
+			font-family: $font-family-sans;
+			margin: $whitespace 0;
+		}
+
+		.carousel .slide .attribution {
+			font-size: $font-size-small;
+			margin-left: 1px; // Safari
+		}
+
+			.carousel .slide .quotation-mark {
+				margin-left: 1px; // Safari
+			}
+
+		.carousel .dots {
+			justify-content: flex-start;
+		}
+
+			.carousel .dots button {
+				border-radius: 0;
+				margin: 0 0.25rem;
+			}
+
+				.carousel .dots button:first-child {
+					margin-left: 0;
+				}
+
+				.carousel .dots button.active {
+					background-color: $red;
+				}
+
+	.carousel .carousel-button {
+		background-color: $colour-background-muted;
+		height: 1rem;
+		width: 1rem;
+	}
+
+// ==============
+// Pink Book Band
+// ==============
+
+.book-card {
+	font-size: $font-size-large;
+	grid-column-start: margin-left;
+	grid-column-end: margin-right;
+	padding-top: $whitespace-large;
+
+	@include break-medium {
+		padding-top: 0;
+	}
+}
+
+// ==================
+// White Courses Band
+// ==================
+
+.courses-card {
+	grid-column-start: margin-left;
+	grid-column-end: margin-right;
+	margin: calc(2.5 * $whitespace-large) 0;
+	max-width: $max-width-home;
+}
+
+.usyd-logo {
+	margin-top: $whitespace-large;
+}
+
+	.usyd-logo svg {
+		float: left;
+		height: auto;
+		margin-right: $whitespace-large;
+		width: 10rem;
+	}
+
+	.usyd-logo span {
+		float: left;
+		font-size: $font-size-small;
+		margin-top: 1rem;
+	}
+
+.courses {
+	clear: both;
+}
+
+	.course {
+		clear: both;
+		padding-top: $whitespace-large;
+	}
+
+	.courses .thumbnail {
+		display: block;
+		float:left;
+		padding: $whitespace-large $whitespace-large 0 0;
+	}
+
+		.courses .thumbnail img {
+			border: 1px solid $mid-grey;
+			height: auto;
+			width: 12.5rem;
+		}
+
+	.courses .description {
+		display: block;
+		float: left;
+		padding-top: $whitespace-large;
+
+		@include break-medium {
+			width: calc(100% - 12.5rem - (2 * $whitespace-large));
+		}
+	}
+
+	.course h3 a,
+	.course h3 a:visited {
+		color: inherit;
+	}
+
+		.course h3 a:hover {
+			color: $red;
+			text-decoration: none;
+		}
+
+// =================
+// Blue Methods Band
+// =================
+
+.methods-image {
+	margin-left: calc(-2 * $whitespace-large);
+	grid-column-start: left;
+	grid-column-end: margin-right;
+	grid-row-start: top;
+	grid-row-end: gutter;
+	overflow: hidden;
+
+	@include break-medium {
+		grid-column-start: left;
+		grid-column-end: image-right;
+		grid-row-start: top;
+		grid-row-end: bottom;
+	}
+}
+
+.methods-intro {
+	grid-column-start: margin-left;
+	grid-column-end: margin-right;
+	grid-row-start: gutter;
+	grid-row-end: bottom;
+	max-width: $max-width-home;
+
+	@include break-medium {
+		grid-column-start: intro-left;
+		grid-column-end: margin-right;
+		grid-row-start: top;
+		grid-row-end: bottom;
+	}
+}
+
+	.methods-intro h2 + h3 {
+		margin-top: 0;
+	}
+
+
+// ============
+// About Footer
+// ============
+
+.about {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+	.about .wrapper {
+		margin: calc(2 * $whitespace-large) $whitespace-large;
+		max-width: $max-width-home;
+	}

@@ -1,0 +1,62 @@
+.methods-table table {
+	font-size: $font-size-small;
+	border-collapse: collapse;
+	margin-top: $whitespace-large;
+}
+
+.methods-table th,
+.methods-table td {
+	padding: calc(0.5 * $whitespace);
+	vertical-align: top;
+}
+
+	.methods-table th {
+		text-align: left;
+	}
+
+	.methods-table td {
+		border-top: $border;
+	}
+
+		.methods-table tr:nth-child(even) td {
+			background-color: $colour-background-muted;
+		}
+
+.methods-table a,
+.methods-table a:visited,
+.methods-table a:hover {
+	color: inherit;
+	text-decoration: none;
+	display: inline-block;
+}
+
+	.methods-table a:hover {
+		color: $red;
+	}
+
+.methods-table .dtmbr-icon {
+	width: calc(0.5 * $icon-size);
+	height: calc(0.5 * $icon-size);
+	margin-right: 0.25rem;
+}
+
+.methods-table .resources {
+	list-style: none;
+}
+
+	.methods-table .resources li + li {
+		margin-top: 0.25rem;
+	}
+
+	.methods-table .resources a code {
+		font-size: $font-size-smaller;
+	}
+
+	.methods-table .resources a svg {
+		fill: inherit;
+		margin-right: 0.25rem;
+	}
+
+		.methods-table .resources a:hover svg {
+			fill: $red;
+		}

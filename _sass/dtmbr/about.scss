@@ -1,0 +1,44 @@
+.citation {
+	background-color: $colour-background-muted;
+	border-radius: 5px;
+	padding: 1rem 45px 1rem 1rem;
+	position: relative;
+	clear: both;
+}
+
+.citation-style,
+.copy-tooltip {
+	padding-bottom: 6px;
+}
+
+	.citation-style {
+		float: left;
+	}
+
+	.copy-tooltip {
+		float: right;
+	}
+
+		.copy-tooltip .tooltip-text {
+	    font-size: $font-size-smaller;
+	    opacity: 0;
+	    transition: opacity 0.5s ease;
+		}
+
+		.copy-tooltip button {
+			align-items: center;
+			background-color: #f6f8fa;
+			border-radius: 6px;
+			border: 1px solid #d1d5da;
+			display: inline-flex;
+			justify-content: center;
+			padding: 8px;
+		}
+
+			.copy-tooltip:hover button {
+				background-color: #e1e4e8;
+			}
+
+			.copy-tooltip:active button {
+				background-color: #d1d5da;
+			}

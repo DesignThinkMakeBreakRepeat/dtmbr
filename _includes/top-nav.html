@@ -1,0 +1,8 @@
+<div class="top-pages">
+  {%- for path in page_paths -%}
+    {%- assign top_page = site.pages | where: "path", path | first -%}
+    {%- if top_page.title -%}
+      <a class="page-link{% if top_page.title == page.title or top_page.title == "Toolkit" and page.layout == "method" %} active{% endif %}" href="{{ top_page.url | relative_url }}">{{ top_page.title | escape }}</a>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

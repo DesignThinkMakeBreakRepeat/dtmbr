@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <div class="grid-container">
+
+    {%- include sidebar.html -%}
+
+    <header class="post-header">
+
+      <div class="post-icons">
+        {%- if page.activities -%}
+          {%- assign activities = "design,think,make,break,repeat" | split: "," -%}
+          {%- for activity in activities -%}
+            {%- if page.activities contains activity -%}
+              {%- assign activity_icon = "svg/dtmbr-icons/" | append: activity | append: ".svg" -%}
+              {%- include {{ activity_icon }} -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+
+      {% assign url_parts = page.url | split: '/' %}
+      {% assign slug = url_parts | last %}
+
+      <h1 class="post-title" id="{{ slug }}">{{ page.title | escape }}</h1>
+
+      {%- if page.layout == "method" -%}
+        <p class="post-subtitle">{{ page.subtitle | escape }}</p>
+      {%- endif -%}
+      
+    </header>
+
+    {%- if page.toc -%}
+      <nav class="page-nav">
+        <div class="wrapper">
+          <strong>On this page</strong>
+          {% include toc.html html=content %}
+        </div>
+      </nav>
+    {%- endif -%}
+
+    <main class="page-content{% if page.title == "Toolkit" %} toolkit{% endif %}" aria-label="Content">
+
+      {{ content }}
+
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

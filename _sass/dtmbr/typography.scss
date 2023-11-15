@@ -1,0 +1,537 @@
+%reset-margin {
+  margin: 1rem 0 0 0;
+  
+  &:first-child {
+    margin: 0;
+  }
+}
+
+// =============
+// Standard Tags
+// =============
+
+body {
+	font-family: $font-family-sans;
+	font-size:   $font-size-base;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+}
+
+p, ul, pre, .video {
+  @extend %reset-margin;
+}
+
+a,
+a:visited {
+	color: $red;
+	text-decoration: none;
+}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+h1 {
+	font-size: 3rem;
+	overflow-wrap: break-word;
+	hyphens: auto;
+	margin-bottom: $whitespace;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.625rem;
+}
+
+h2, h3 {
+	margin-top: calc(1.5 * $font-size-base * $line-height-base);
+}
+
+	h2:first-child,
+	h3:first-child {
+		margin-top: 0;
+	}
+
+	h2 + h3 {
+		margin-top: 1rem;
+	}
+
+img {
+	max-width: 100%;
+}
+
+code, pre {
+	font-size: 0.9em;
+}
+
+pre {
+	overflow-x: scroll;
+}
+
+kbd {
+	background-color: $colour-background-muted;
+	border-radius: 0.35rem;
+	box-shadow: none;
+	color: rgb(175, 175, 175);
+	cursor: default;
+	padding: calc(0.5 * $whitespace);
+	white-space: nowrap;
+}
+
+kbd .command {
+	margin-right: 0.2em;
+}
+
+// ===============
+// Common Elements
+// ===============
+
+.arrow-icon {
+	fill: none;
+}
+
+	.arrow-icon circle {
+		fill: $red-pale;
+	}
+
+	.arrow-icon path {
+		stroke: $red;
+		stroke-width: 4;
+	}
+
+a.button {
+	display: inline-block;
+	padding: calc(0.5 * $whitespace);
+	border: 1px solid $red;
+}
+
+	a.button:hover {
+		text-decoration: none;
+		background-color: $red;
+		color: $white;
+	}
+
+.nav-trigger {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	height: 0;
+	opacity: 0;
+	position: absolute;
+	width: 0;
+}
+
+.video {
+	position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+	.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	}
+
+// ===========
+// Site Header
+// ===========
+
+body.home .site-header .grid-container {
+
+	@include break-medium {
+		grid-template-columns: [left] $whitespace [sidebar-left] 4rem [sidebar-right] $whitespace-large [content-left] auto [search-right] auto [content-right] $whitespace [right];
+	}
+
+	@include break-large {
+		grid-template-columns: [left] $whitespace [sidebar-left] $sidebar-width [sidebar-right] $whitespace-large [content-left] auto [search-right] auto [content-right] $whitespace [right];
+	}
+}
+
+.site-header .site-title {
+	width: 5rem;
+
+	@include break-medium {
+		width: auto;
+	}
+}
+
+	body.home .site-header .site-title {
+		@include break-medium {
+			width: 5rem;
+		}
+
+		@include break-large {
+			width: auto;
+		}
+	}
+
+.site-header .site-title span.full {
+	display: none;
+
+	@include break-medium {
+		display: inline;
+	}
+}
+
+	body.home .site-header .site-title span.full {
+		@include break-medium {
+			display: none;
+		}
+
+		@include break-large {
+			display: inline;
+		}
+	}
+
+.site-header .site-title span.short {
+	@include break-medium {
+		display: none;
+	}
+}
+
+	body.home .site-header .site-title span.short {
+		@include break-medium {
+			display: inline;
+		}
+
+		@include break-large {
+			display: none;
+		}
+	}
+
+	.site-header .top-pages a + a {
+		margin-left: calc(1.25 * $whitespace);
+	}
+
+	.site-header .top-pages a.active,
+	.site-header .top-pages a.active:visited,
+	.site-header .top-pages a.active:hover {
+		background-color: $red;
+		color: $white;
+		font-size: 16px;
+		line-height: 1;
+		padding: 6px 10px;
+		position: relative;
+	}
+
+		.site-header .top-pages a.active:after {
+			width: 0;
+		  border-top: 0;
+		  border-bottom: 30px solid transparent;
+		  border-left: 14px solid $red;
+		  content: "";
+		  height: 0;
+		  position: absolute;
+		  right: -14px;
+		  top: 0;
+		}
+
+	.site-header .top-pages a,
+	.site-header .top-pages a:visited,
+	.site-header .top-pages a:hover {
+		color: inherit;
+		transition: color 0.25s ease;
+	}
+
+		.site-header .top-pages a:hover {
+			color: $red;
+			text-decoration: none;
+		}
+
+// ======
+// Search
+// ======
+
+.search {
+	font-size: $font-size-small;
+	height: 0px;
+	margin: 0.2rem 0 0 5rem;
+	overflow: visible;
+	padding-left: $whitespace;
+	z-index: 2;
+
+	@include break-medium {
+		margin-left: 0;
+		padding-left: calc(2 * $whitespace);
+	}
+}
+
+	.search-field {
+		white-space: nowrap;
+	}
+
+	.search input {
+		background-color: $colour-background-muted;
+		border-radius: 0.35rem;
+		border: none;
+		display: inline-block;
+		padding: calc(0.5 * $whitespace);
+		width: 10rem;
+	}
+
+	.search kbd {
+		border-radius: 0.35rem;
+		border: none;
+		display: inline-block;
+		font-size: inherit;
+		line-height: inherit;
+		padding: calc(0.5 * $whitespace);
+	}
+
+#shortcut-clear {
+	display: none;
+}
+
+#results-container {
+	background-color: white;
+	border-radius: 0.35rem;
+	border: $border;
+	display: none;
+	list-style: none;
+	padding: 0.5rem 0.5rem;
+	width: 17.5rem;
+}
+
+	#results-container li:first-child a,
+	#results-container li:first-child a:visited {
+		padding-top: 0;
+	}
+	
+	#results-container li:last-child:nth-child(odd) a,
+	#results-container li:last-child:nth-child(odd) a:visited {
+		padding-bottom: 0;
+	}
+
+	#results-container li:nth-child(even) {
+		background-color: $colour-background-muted;
+	}
+
+	#results-container li a,
+	#results-container li a:visited {
+		display: inline-block;
+		padding: 0.25rem 0.5rem;
+		width: 100%;
+	}
+
+// =======
+// Sidebar
+// =======
+
+#sidebar {
+	font-size: $font-size-small;
+}
+
+	#sidebar a,
+	#sidebar a:visited,
+	#sidebar a:hover {
+		color: inherit;
+		display: inline-block;
+		padding: calc(0.25 * $whitespace) 0;
+		transition: color 0.25s ease;
+		width: 100%;
+	}
+
+		#sidebar a:hover {
+			text-decoration: none;
+			color: $red;
+		}
+
+		#sidebar a.active,
+		#sidebar a.active:visited,
+		#sidebar a.active:hover {
+			color: $red;
+		}
+
+	#sidebar h2 {
+		cursor: pointer;
+		font-size: inherit;
+		padding: 0.7rem 0;
+		transition: color 0.25s ease;
+	}
+
+		#sidebar h2.on-this-page {
+			padding: 0 0 0.25rem 0;
+		}
+
+		#sidebar h2 svg {
+			fill: #bbbbbb;
+			height: 1em;
+			transition: fill 0.25s ease;
+		}
+
+		#sidebar h2:hover {
+			color: $red;
+			cursor: pointer;
+			transition: color 0.25s ease;
+		}
+
+			#sidebar h2:hover svg {
+				fill: $red;
+				transition: fill 0.25s ease;
+			}
+
+	#sidebar ul{
+		list-style: none;
+		margin: 0 0 0.7rem 0;
+		width: 100%;
+	}
+
+		#sidebar ul ul {
+			margin: 0;
+			padding-left: $whitespace;
+		}
+
+	#sidebar .chevron {
+		float: right;
+		transition: rotate 0.25s ease;
+	}
+
+		#sidebar .letter-drawer.open .chevron {
+			rotate: 90deg;
+		}
+
+// ===========
+// Page Header
+// ===========
+
+.post-subtitle {
+	font-size: 1.625rem;
+	margin: -$whitespace-small 0 $whitespace-large 0;
+}
+
+.dtmbr-icon {
+	fill: $colour-text;
+	height: $icon-size;
+	margin-right: 0.5rem;
+	width: $icon-size;
+}
+
+// ===============
+// Page Navigation
+// ===============
+
+nav.page-nav {
+	font-size: $font-size-small;
+}
+
+	nav.page-nav .wrapper {
+		border-left: $border;
+		padding-left: $whitespace;
+	}
+
+	nav.page-nav strong {
+		display: inline-block;
+		padding-bottom: 0.25rem;
+	}
+
+	nav.page-nav ul {
+		list-style: none;
+		margin: 0;
+	}
+
+		nav.page-nav ul ul {
+			padding-left: $whitespace;
+		}
+
+	nav.page-nav a,
+	nav.page-nav a:visited {
+		color: inherit;
+		display: inline-block;
+		padding: 0.25rem 0;
+	}
+
+		nav.page-nav a:hover {
+			color: $red;
+			text-decoration: none;
+		}
+
+// ============
+// Page Content
+// ============
+
+.post-content .caption {
+	color: $colour-text-muted;
+	font-size: $font-size-small;
+	margin-top: 0;
+}
+
+	.post-content .caption a,
+	.post-content .caption a:visited {
+		color: inherit;
+	}
+
+		.post-content .caption a:hover {
+			color: $red;
+			text-decoration: none;
+		}
+
+.post-content .resources {
+	list-style-type: none;
+}
+
+	.post-content .resources li + li {
+		margin-top: 0.35rem;
+	}
+
+	.post-content .resources a:hover {
+		text-decoration: none;
+	}
+
+		.post-content .resources a:hover span {
+			text-decoration: underline;
+		}
+
+	.post-content .resources a svg {
+		fill: $red;
+		margin-right: 0.4rem;
+	}
+
+	.post-content .resources a code {
+		background-color: #f2f2f2;
+		border-radius: 3px;
+		display: inline-block;
+		font-size: 0.9rem;
+		margin: 0 -4px 0 0;
+		padding: 0 4px;
+	}
+
+// ===========
+// Site Footer
+// ===========
+
+.site-footer {
+	color: $mid-grey;
+	font-size: $font-size-small;
+}
+
+	.site-footer a,
+	.site-footer a:visited {
+		color: inherit;
+		text-decoration: underline;
+	}
+
+		.site-footer a:hover {
+			text-decoration: none;
+		}
+
+		.site-footer .nav.column a {
+			display: block;
+		}
+
+		.site-footer .top-arrow.column a.top-arrow {
+			color: $red;
+			float: right;
+			text-align: center;
+		}
+
+			.site-footer .top-arrow.column a.top-arrow span {
+				display: block;
+			}

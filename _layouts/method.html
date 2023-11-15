@@ -1,0 +1,38 @@
+---
+layout: base
+---
+
+<article class="post">
+  <div class="post-content">
+
+    {%- assign page_basename = page.name | split: "." | first -%}
+    {%- for file in site.static_files -%}
+      {%- assign file_basename = file.name | split: "." | first -%}
+      {%- if file_basename == page_basename -%}
+        <img src="{{ file.path | relative_url }}">
+        {%- if page.image-credit -%}
+        <p class="caption">{%- if page.image-credit-url -%}<a href="{{ page.image-credit-url }}">{%- endif -%}{{ page.image-credit }}{%- if page.image-credit-url -%}</a>{%- endif -%}</p>
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {{ content }}
+
+    <p>Continued {% if page.pages %}on pages {{ page.pages }} of{% else %}in{% endif %} <em><a href="{{ "/buy" }}">Design. Think. Make. Break. Repeat.</a></em>
+
+    <h2 id="resources">Resources</h2>
+    
+    <ul class="resources">
+      {%- for resource in page.resources -%}
+        {%- if resource.url -%}
+          <li><a href="{{ resource.url }}">{%- include svg/octicons/link.svg -%}<span>{{ resource.name }}</span></a></li>
+        {%- elsif resource.file -%}
+          {%- assign resource_ext = resource.file | split: "." | last -%}
+          {%- assign resource_path = "/resources/" | append: resource.file -%}
+          <li><a href="{{ resource_path | relative_url }}">{%- include svg/octicons/desktop-download.svg -%}<span>{{ resource.name }} <code>{{ resource_ext }}</code></span></a></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+
+  </div>
+</article>

@@ -1,0 +1,155 @@
+</div>
+
+<footer class="site-footer h-card">
+  
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="grid-container">
+
+    <div class="nav column">
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="top-arrow column">
+      <a class="top-arrow" href="#top">
+        {%- include svg/arrow-up.svg -%}<br>
+        <span>Back to top</span>
+      </a>
+    </div>
+
+    <div class="content column">
+      {{ site.data.site-parts.footer }}
+    </div>
+
+  </div>
+
+</footer>
+
+<script src="{{ "/assets/js/simple-jekyll-search.min.js" | relative_url }}"></script>
+
+<script type="text/javascript">
+
+  const drawers = document.querySelectorAll('.letter-drawer');
+  const menuButton = document.getElementById('menu-icon');
+  const sidebar = document.getElementById('sidebar');
+
+  menuButton.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+  
+  drawers.forEach(drawer => {
+    const h2 = drawer.querySelector('h2');
+    h2.addEventListener('click', () => {
+      drawer.classList.toggle('open');
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    var searchInput = document.getElementById('search-input');
+    var resultsContainer = document.getElementById('results-container');
+    var shortcutFocus = document.getElementById('shortcut-focus');
+    var shortcutClear = document.getElementById('shortcut-clear');
+
+    var sjs = SimpleJekyllSearch({
+      searchInput: searchInput,
+      resultsContainer: resultsContainer,
+      json: '/search.json'
+    });
+
+    function toggleResultsContainer() {
+      if (searchInput.value.trim() === '') {
+        resultsContainer.style.display = 'none';
+      } else {
+        resultsContainer.style.display = 'block';
+      }
+    }
+
+    function toggleVisibility() {
+      if (shortcutFocus.style.display !== 'none') {
+        shortcutFocus.style.display = 'none';
+        shortcutClear.style.display = 'inline-block';
+      } else {
+        shortcutFocus.style.display = 'inline-block';
+        shortcutClear.style.display = 'none';
+      }
+    }
+
+    searchInput.addEventListener('input', toggleResultsContainer);
+    toggleResultsContainer();
+
+    searchInput.addEventListener('focus', function() {
+      toggleVisibility();
+    });
+
+    searchInput.addEventListener('blur', function() {
+      toggleVisibility();
+    });
+
+  });
+
+  document.addEventListener('keydown', function(event) {
+    if (event.metaKey || event.ctrlKey) {
+      if (event.key.toLowerCase() === 'k') {
+        event.preventDefault();
+        const searchInput = document.getElementById('search-input');
+        searchInput.focus();
+        searchInput.select();
+      } else if (event.key === 'k') {
+        event.preventDefault();
+        searchInput.value = '';
+      }
+    }
+  });
+
+</script>
+
+{%- if page.copy-button -%}
+<script type="text/javascript">
+
+  let clipboard = new ClipboardJS('.copy-tooltip button');
+
+  clipboard.on('success', function(event) {
+
+    event.clearSelection();
+
+    var tooltip = event.trigger.parentNode.querySelector('.tooltip-text');
+    tooltip.style.opacity = 1;
+    tooltip.style.visibility = 'visible';
+
+    setTimeout(function() {
+      tooltip.style.opacity = 0;
+      tooltip.style.visibility = 'hidden';
+    }, 2000);
+
+  });
+
+</script>
+{%- endif -%}
+
+{%- if page.url == "/" -%}
+<script type="text/javascript">
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    new Glider(document.querySelector('.carousel-slides-book'), {
+      dots: '#dots-book',
+      draggable: true,
+      slidesToShow: 1
+    });
+
+    new Glider(document.querySelector('.carousel-slides-courses'), {
+      dots: '#dots-courses',
+      draggable: true,
+      slidesToShow: 1
+    });
+    
+  });
+
+</script>
+{%- endif -%}
