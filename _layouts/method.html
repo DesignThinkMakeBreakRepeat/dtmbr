@@ -6,15 +6,11 @@ layout: base
   <div class="post-content">
 
     {%- assign page_basename = page.name | split: "." | first -%}
-    {%- for file in site.static_files -%}
-      {%- assign file_basename = file.name | split: "." | first -%}
-      {%- if file_basename == page_basename -%}
-        <img src="{{ file.path | relative_url }}">
-        {%- if page.image-credit -%}
-        <p class="caption">{%- if page.image-credit-url -%}<a href="{{ page.image-credit-url }}">{%- endif -%}{{ page.image-credit }}{%- if page.image-credit-url -%}</a>{%- endif -%}</p>
-        {%- endif -%}
-      {%- endif -%}
-    {%- endfor -%}
+    {%- assign image_path = "/assets/images/toolkit/" | append: page_basename | append: ".jpg" -%}
+    <img src="{{ image_path | relative_url }}">
+    {%- if page.image-credit -%}
+      <p class="caption">{%- if page.image-credit-url -%}<a href="{{ page.image-credit-url }}">{%- endif -%}{{ page.image-credit }}{%- if page.image-credit-url -%}</a>{%- endif -%}</p>
+    {%- endif -%}
 
     {{ content }}
 
