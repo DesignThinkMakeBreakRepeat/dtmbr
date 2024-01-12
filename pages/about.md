@@ -64,3 +64,35 @@ The first edition of the book was published in 2018 and included 60 methods. The
 	publisher = {BIS Publishers},
 	title = {Design. Think. Make. Break. Repeat. A Handbook of Methods},
 	year = {2020}}</pre>
+
+# Team
+
+**Project leads:**
+Martin Tomitsch, Madeleine Borthwick
+
+**Methods contributors:**
+Naseem Ahmadpour, Madeleine Borthwick, Clare Cooper, Jessica Frawley, Joel Fredericks, Alex Garrett, Phil Gough, Raphael Hammel, Hamish Henderson, Leigh-Anne Hepburn, A. Baki Kocaballi, Lian Loke, Claudia Núñez-Pacheco, George Peppou, Dagmar Reinhardt, Karla Straker, Manuela Taboada, Martin Tomitsch, Cara Wrigley
+
+**Copy editing:**
+Verity Borthwick
+
+**Layout and graphic design:**
+Matthew Fehlberg, Soomin Lee, Annet Venema
+
+**Sketches:**
+Nikash Singh
+
+**Diagrams:**
+Baki Kocaballi
+
+**Cover design:**
+Madeleine Borthwick, Nikash Singh
+
+**Book production:**
+BIS Publishers
+
+**Case study video production:**
+DMC Digital
+
+**Miro template designers:**
+Rachel Montgomery, Amelia Zaiane
