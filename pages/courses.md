@@ -19,6 +19,10 @@ The course is based on the book Design Think Make Break Repeat and structured in
 
 # Creative Thinking and Innovation
 
+<div class="video">
+	<iframe src="https://www.youtube.com/embed/_cZtaUahM6E?si=j_CxMy32vQ-kem2_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 Hear from some of our book authors, including Martin Tomitsch and Madeleine Borthwick, about how to embrace and practice creativity. This self-paced online course debunks the myth that you need to be born with the skills to be creative. Short exercises invite you to look for opportunities in your daily life and work to be creative and to come up with innovative ideas. 
 
 The course explores how the success of Pixar and Nobel Prizes winners is linked to creative thinking and innovation. It also features industry case studies with industry experts from IBM and Google, who share how they use creativity and innovation in their work – from designing sustainability dashboards to using AI to protect the Great Barrier Reef. 
