@@ -114,7 +114,7 @@
               {%- for course_set in courses -%}
               <div class="course">
                 <div class="thumbnail">
-                  <a href="{{ "courses" | append: course_set.anchor | relative_url }}">
+                  <a href="{{ "courses/#" | append: course_set.anchor | relative_url }}">
                     <img src="{{ "/assets/images/" | append: course_set.image | relative_url }}">
                   </a>
                 </div>
