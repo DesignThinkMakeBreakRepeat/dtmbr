@@ -10,7 +10,9 @@ image-credit:     Claudia Núñez-Pacheco
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l38g9hw=/
+  - name: Printable Template
     file: Body Mapping - Template.pdf
   - name: Slides
     file: Body Mapping.key

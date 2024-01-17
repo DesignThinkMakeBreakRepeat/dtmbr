@@ -10,6 +10,8 @@ image-credit:     Clare Cooper
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l3Dzx2Y=/
   - name: Structure Guide
     file: Design Timescapes - Structure Guide.pdf
   - name: Slides

@@ -10,6 +10,8 @@ image-credit:     Kate Bookallil
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l11S-Fk=/
   - name: Structure Guide
     file: User Profiles - Structure Guide.pdf
   - name: "Questionnaire Data: Air Travel"

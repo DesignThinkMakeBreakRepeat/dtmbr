@@ -10,6 +10,10 @@ image-credit:     City University Interaction Lab, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/cinteractionlab/4557114137/
 
 resources:
+  - name: Miro Template - Data Sheet 1
+    url: https://miro.com/app/board/o9J_lzKf2yc=/
+  - name: Miro Template - Data Sheet 2
+    url: https://miro.com/app/board/o9J_lzKakcg=/
   - name: Data Sheet
     file: Usability Testing - Data Sheet.pdf
   - name: Slides

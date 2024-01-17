@@ -10,7 +10,9 @@ image-credit:     Kevin Dooley, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/pagedooley/6575053747/
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_lyJC7j8=/
+  - name: Printable Template
     file: Value Proposition Canvas - Template.pdf
   - name: Slides
     file: Value Proposition Canvas.key

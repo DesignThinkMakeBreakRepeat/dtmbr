@@ -10,6 +10,8 @@ image-credit:     Vijay Chennupati, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/vijay_chennupati/34255520505/
 
 resources:
+  - name: Miro Template - Data Sheet
+    url: https://miro.com/app/board/o9J_l118-RY=/
   - name: Data Sheet
     file: Thematic Analysis - Data Sheet.pdf
   - name: Sample Data Sheet

@@ -10,7 +10,9 @@ image-credit:     Gauthier Delecroix, CC-BY 2.0
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l38pM6U=/
+  - name: Printable Template
     file: Channel Mapping - Template.pdf
   - name: Slides
     file: Channel Mapping.key

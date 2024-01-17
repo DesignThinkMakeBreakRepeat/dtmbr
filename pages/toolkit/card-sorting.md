@@ -10,7 +10,9 @@ image-credit:     Sarah Brooks, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/foodclothingshelter/3511435109/
 
 resources:
-  - name: Template
+  - name: Miro Template - Data Sheet
+    url: https://miro.com/app/board/o9J_l382bO4=/
+  - name: Printable Template
     file: Card Sorting - Template.pdf
   - name: Supermarket Site Map
     file: Card Sorting - Supermarket Site Map.pdf

@@ -10,6 +10,8 @@ image-credit:     Alexander Osterwalder, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/osterwalder/4184663774/
 
 resources:
+  - name: Miro Template - Canvas
+    url: https://miro.com/app/board/o9J_l38qQ_4=/
   - name: Canvas
     file: Business Model Experimentation - Canvas.pdf
   - name: "Canvas: Retail Example"

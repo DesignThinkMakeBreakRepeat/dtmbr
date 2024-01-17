@@ -10,6 +10,8 @@ image-credit:     Chuttersnap
 image-credit-url: https://unsplash.com/photos/u2VPMFRrhGU
 
 resources:
+  - name: Miro Template - Canvas
+    url: https://miro.com/app/board/o9J_l11TTuM=/
   - name: Canvas
     file: Local Orbits - Canvas.pdf
   - name: Slides

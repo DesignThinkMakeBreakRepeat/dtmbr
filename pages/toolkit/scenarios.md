@@ -10,6 +10,8 @@ image-credit:     Mac Vincente, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/macluckystar/7204790124/
 
 resources:
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l21G00U=/
   - name: Structure Guide
     file: Scenarios - Structure Guide.pdf
   - name: Slides

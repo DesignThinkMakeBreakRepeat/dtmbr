@@ -10,6 +10,8 @@ image-credit:     Callum Hill
 image-credit-url: https://unsplash.com/photos/L7V4rwETDb0
 
 resources:
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l0mEcp8=/
   - name: Notes Sheet
     file: Material Exploration - Notes Sheet.pdf
   - name: Data Sheet

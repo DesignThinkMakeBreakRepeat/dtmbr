@@ -10,7 +10,9 @@ image-credit:     Emily Tulloh, CC-BY 2.0
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Blank Cards
+    url: https://miro.com/app/board/o9J_l11weJg=/
+  - name: Printable Template
     file: Role-Playing - Template.pdf
   - name: Slides
     file: Role-Playing.key

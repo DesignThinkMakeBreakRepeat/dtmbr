@@ -10,6 +10,10 @@ image-credit:     Angineh Karabedian
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Structure Guide 1
+    url: https://miro.com/app/board/o9J_l6ZEd9Q=/
+  - name: Miro Template - Structure Guide 2
+    url: https://miro.com/app/board/o9J_l5mwltM=/
   - name: Exercises
     file: Context Mapping - Exercises.pdf
   - name: Structure Guide 1

@@ -10,6 +10,8 @@ image-credit:     Clare Cooper
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Canvas
+    url: https://miro.com/app/board/o9J_l42INn4=/
   - name: Canvas
     file: Backcasting - Canvas.pdf
   - name: Scenario

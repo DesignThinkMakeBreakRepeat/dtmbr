@@ -10,7 +10,9 @@ image-credit:     Siaron James, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/59489479@N08/30040305296/
 
 resources:
-  - name: Template
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l3DqjB4=/
+  - name: Printable Template
     file: Decision Matrices - Template.pdf
   - name: Museums Storyboards
     file: Decision Matrices - Museums Storyboards.pdf

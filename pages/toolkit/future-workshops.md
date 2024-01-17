@@ -10,6 +10,12 @@ image-credit:     Tobias Toft, CC-BY 2.0
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Cue Sheets
+    url: https://miro.com/app/board/o9J_l22gKig=/
+  - name: Miro Template - Data Sheet
+    url: https://miro.com/app/board/o9J_l21-p9c=/
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l2196GM=/
   - name: Cue Sheet
     file: Future Workshops - Cue Sheet.pdf
   - name: Data Sheet

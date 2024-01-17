@@ -10,6 +10,8 @@ image-credit:     Pin Add, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/pinadd/2858659917/
 
 resources:
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_lyLG9VU=/
   - name: Structure Guide
     file: Service Blueprints - Structure Guide.pdf
   - name: Slides

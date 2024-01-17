@@ -10,6 +10,8 @@ image-credit:     Maria Aiolova, Terreform
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l2wNzU8=/
   - name: Structure Guide
     file: Non-human Personas - Structure Guide.pdf
   - name: Concepts

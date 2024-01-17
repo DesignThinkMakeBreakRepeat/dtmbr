@@ -10,7 +10,9 @@ image-credit:     US Department of Agriculture, CC-BY 2.0
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l3D2DNo=/
+  - name: Printable Template
     file: Design by Metaphor - Template.pdf
   - name: Slides
     file: Design By Metaphor.key

@@ -10,6 +10,8 @@ image-credit:     Mike Lewinski
 image-credit-url: https://unsplash.com/photos/hh7UrZGZAF8
 
 resources:
+  - name: Miro Template - Canvas
+    url: https://miro.com/app/board/o9J_l21H21U=/
   - name: Canvas
     file: Impact Ripple Canvas - Canvas.pdf
   - name: Slides

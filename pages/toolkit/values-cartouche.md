@@ -10,7 +10,7 @@ image-credit:     Glodi Miessi
 image-credit-url: https://unsplash.com/photos/AEDL5tCjnFQ
 
 resources:
-  - name: Template
+  - name: Printable Template
     file: Values Cartouche - Template.pdf
   - name: Icons
     file: Values Cartouche - Icons.pdf

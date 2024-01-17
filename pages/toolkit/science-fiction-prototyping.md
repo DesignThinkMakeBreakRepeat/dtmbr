@@ -10,7 +10,9 @@ image-credit:     Canadian Film Centre, CC-BY 2.0
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Miro Template
+    url: https://miro.com/app/board/o9J_l118-dE=/
+  - name: Printable Template
     file: Science Fiction Prototyping - Template.pdf
   - name: Slides
     file: Science Fiction Prototyping.key

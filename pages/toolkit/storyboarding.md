@@ -10,7 +10,9 @@ image-credit:     Chinmay Kulkarni
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Miro Template - Sketch Sheet
+    url: https://miro.com/app/board/o9J_lzEbAG8=/
+  - name: Printable Template
     file: Storyboarding - Template.pdf
   - name: Slides
     file: Storyboarding.key

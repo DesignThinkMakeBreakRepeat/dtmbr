@@ -10,7 +10,9 @@ image-credit:     Mark Gunn, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/mark-gunn/14601979455/
 
 resources:
-  - name: Template
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l21G00U=/
+  - name: Printable Template
     file: Hero Stories - Template.pdf
   - name: Slides
     file: Hero Stories.key

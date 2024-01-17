@@ -10,7 +10,9 @@ image-credit:     U.S. Fish and Wildlife Service Southeast Region, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/usfwssoutheast/8077209942/
 
 resources:
-  - name: Template
+  - name: Miro Template - Data Sheet
+    url: https://miro.com/app/board/o9J_l3Dqj1Y=/
+  - name: Printable Template
     file: Contextual Observation - Template.pdf
   - name: Slides
     file: Contextual Observation.key

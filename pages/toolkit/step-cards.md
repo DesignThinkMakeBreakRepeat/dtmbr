@@ -10,7 +10,9 @@ image-credit:
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Miro Template - Blank Cards
+    url: https://miro.com/app/board/o9J_lyKQsKA=/
+  - name: Printable Template
     file: STEP Cards - Template.pdf
   - name: Cards
     file: STEP Cards - Cards.pdf

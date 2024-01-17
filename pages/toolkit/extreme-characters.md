@@ -10,7 +10,9 @@ image-credit:     Dawei Zhou
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l2qOGPE=/
+  - name: Printable Template
     file: Extreme Characters - Template.pdf
   - name: Slides
     file: Extreme Characters.key

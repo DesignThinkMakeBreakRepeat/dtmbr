@@ -10,7 +10,9 @@ image-credit:     Ashlee Martin, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/ashl33/3391702714/
 
 resources:
-  - name: Template
+  - name: Miro Template - Data Sheet
+    url: https://miro.com/app/board/o9J_l39YbSo=/
+  - name: Printable Template
     file: Competitor Analysis - Template.pdf
   - name: Slides
     file: Competitor Analysis.key

@@ -10,6 +10,8 @@ image-credit:     Clare Cooper
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Canvas
+    url: https://miro.com/app/board/o9J_lyK6UeE=/
   - name: Canvas
     file: Speculating Preferred Futures - Canvas.pdf
   - name: Slides

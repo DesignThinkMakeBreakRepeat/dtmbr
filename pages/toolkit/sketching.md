@@ -10,7 +10,9 @@ image-credit:     Peter Lindberg, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/plindberg/2557393147/
 
 resources:
-  - name: Template
+  - name: Miro Template
+    url: https://miro.com/app/board/o9J_l11EGpU=/
+  - name: Printable Template
     file: Sketching - Template.pdf
   - name: Slides
     file: Sketching.key

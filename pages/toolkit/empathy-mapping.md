@@ -10,6 +10,8 @@ image-credit:     Josh Calabrese
 image-credit-url: https://unsplash.com/photos/qmnpqDwla_E
 
 resources:
+  - name: Miro Template - Canvas
+    url: https://miro.com/app/board/o9J_l2qhyFU=/
   - name: Canvas
     file: Empathy Mapping - Canvas.pdf
   - name: Slides

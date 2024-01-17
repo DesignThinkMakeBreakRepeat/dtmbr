@@ -10,6 +10,8 @@ image-credit:     Ian Schneider
 image-credit-url: https://unsplash.com/photos/TamMbr4okv4
 
 resources:
+  - name: Miro Template - Canvas
+    url: https://miro.com/app/board/o9J_lyJ-YYs=/
   - name: Canvas
     file: Strategy Choice Cascade - Canvas.pdf
   - name: Slides

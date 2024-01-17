@@ -10,7 +10,7 @@ image-credit:     Chinmay Kulkarni
 image-credit-url: 
 
 resources:
-  - name: Template
+  - name: Printable Template
     file: Wireframing - Template.pdf
   - name: Interface Elements
     file: Wireframing - Interface Elements.pdf

@@ -10,7 +10,9 @@ image-credit:     Double-M, Public Domain Dedication (CC0)
 image-credit-url: https://www.flickr.com/photos/double-m2/4705739444
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l0zLVOM=/
+  - name: Printable Template
     file: Morphological Charts - Template.pdf
   - name: Slides
     file: Morphological Charts.key

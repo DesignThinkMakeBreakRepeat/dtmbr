@@ -10,7 +10,9 @@ image-credit:     City University Interaction Lab, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/cinteractionlab/4557093503/
 
 resources:
-  - name: Template
+  - name: Miro Template
+    url: https://miro.com/app/board/o9J_l11UOsk=/
+  - name: Printable Template
     file: Think-Aloud Protocol - Template.pdf
   - name: Slides
     file: Think Aloud Protocol.key

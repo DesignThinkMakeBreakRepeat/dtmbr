@@ -10,7 +10,9 @@ image-credit:     Universidad Magallanes, Public Domain Mark 1.0
 image-credit-url: https://www.flickr.com/photos/umag/33152726634/
 
 resources:
-  - name: Template
+  - name: Miro Template - Data Sheet
+    url: https://miro.com/app/board/o9J_l22kR18=/
+  - name: Printable Template
     file: Focus Groups - Template.pdf
   - name: Slides
     file: Focus Groups.key

@@ -10,7 +10,9 @@ image-credit:     Alper Çuğun, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/alper/9516543726/
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l21NTkY=/
+  - name: Printable Template
     file: Interviews - Template.pdf
   - name: Slides
     file: Interviews.key

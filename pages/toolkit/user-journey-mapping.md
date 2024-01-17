@@ -10,7 +10,7 @@ image-credit:     Rawpixel.com, Public Domain Dedication (CC0)
 image-credit-url: https://www.flickr.com/photos/byrawpixel/32881021611/
 
 resources:
-  - name: Template
+  - name: Printable Template
     file: User Journey Mapping - Template.pdf
   - name: Retail Example
     file: User Journey Mapping - Retail Example.pdf

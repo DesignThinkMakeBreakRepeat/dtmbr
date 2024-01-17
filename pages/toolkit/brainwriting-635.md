@@ -10,7 +10,9 @@ image-credit:     Kelly Writers House, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/kellywritershouse/5529146953/
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l42Xsto=/
+  - name: Printable Template
     file: Brainwriting 6-3-5 - Template.pdf
   - name: Slides
     file: Brainwriting 6-3-5.key

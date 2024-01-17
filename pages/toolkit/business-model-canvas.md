@@ -10,6 +10,8 @@ image-credit:     First Round Capital
 image-credit-url: https://review.firstround.com/To-Go-Lean-Master-the-Business-Model-Canvas
 
 resources:
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l38sfUA=/
   - name: Canvas
     file: Business Model Canvas - Canvas.pdf
   - name: "Canvas: Retail Example"

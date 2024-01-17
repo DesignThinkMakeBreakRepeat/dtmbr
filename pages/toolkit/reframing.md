@@ -10,6 +10,8 @@ image-credit:     Katarina Chovancova, CC-BY-SA 2.0
 image-credit-url: https://www.flickr.com/photos/128196805@N03/16798815406/
 
 resources:
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_l2w8W68=/
   - name: Structure Guide
     file: Reframing - Structure Guide.pdf
   - name: Slides

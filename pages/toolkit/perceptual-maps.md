@@ -10,7 +10,11 @@ image-credit:     Rasheeda Ahmed - Jordanhill School D&T Dept, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/designandtechnologydepartment/4032186959/
 
 resources:
-  - name: Template
+  - name: Miro Template - Data Sheet 1
+    url: https://miro.com/app/board/o9J_l04HNwI=/
+  - name: Miro Template - Data Sheet 2
+    url: https://miro.com/app/board/o9J_l0_w4Gs=/
+  - name: Printable Template
     file: Perceptual Maps - Template.pdf
   - name: Slides
     file: Perceptual Maps.key

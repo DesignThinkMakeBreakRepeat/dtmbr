@@ -10,6 +10,8 @@ image-credit:     Kasturi Roy
 image-credit-url: https://unsplash.com/photos/NO1MXvxy02o
 
 resources:
+  - name: Miro Template - Blank Cards
+    url: https://miro.com/app/board/o9J_l23dtD4=/
   - name: Blank Cards
     file: Design Team Cards - Blank Cards.pdf
   - name: Slides

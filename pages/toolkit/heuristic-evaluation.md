@@ -10,7 +10,9 @@ image-credit:     Image catalog, Public Domain Dedication (CC0)
 image-credit-url: https://www.flickr.com/photos/image-catalog/18692128651/
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l21NfWs=/
+  - name: Printable Template
     file: Heuristic Evaluation - Template.pdf
   - name: Slides
     file: Heuristic Evaluation.key

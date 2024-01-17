@@ -10,7 +10,9 @@ image-credit:     Art Poskanzer, CC-BY 2.0
 image-credit-url: https://www.flickr.com/photos/posk/8333973575/
 
 resources:
-  - name: Template
+  - name: Miro Template - Notes Sheet
+    url: https://miro.com/app/board/o9J_l38iqcQ=/
+  - name: Printable Template
     file: 5 Whys - Template.pdf
   - name: Slides
     file: 5 Whys.key

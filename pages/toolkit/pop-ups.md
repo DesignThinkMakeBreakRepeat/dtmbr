@@ -10,6 +10,8 @@ image-credit:     Li Ozinga, China Studies Centre, The University of Sydney
 image-credit-url: 
 
 resources:
+  - name: Miro Template - Structure Guide
+    url: https://miro.com/app/board/o9J_lzF8IvY=/
   - name: Structure Guide
     file: Pop-Ups - Structure Guide.pdf
   - name: Slides
